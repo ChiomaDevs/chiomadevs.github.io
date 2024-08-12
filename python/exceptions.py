@@ -18,4 +18,4 @@ except ZeroDivisionError:
     print("Error: Non divisible by 0")
     sys.exit(1)
 
-print(f"{x} / {y} = {output}")
+print(f"{x} / {y} = {output:.2f}")
