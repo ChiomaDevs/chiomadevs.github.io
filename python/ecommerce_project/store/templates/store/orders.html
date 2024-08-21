@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <h2>My Orders</h2>
+
+    {% if orders %}
+        <ul>
+        {% for order in orders %}
+            <li>Order ID: {{ order.id }} - Status: {{ order.status }}</li>
+            <!-- You can include more order details as needed -->
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>You have no orders.</p>
+    {% endif %}
+{% endblock %}
