@@ -8,12 +8,17 @@ from django.contrib.auth.forms import AuthenticationForm
 # Create your views here.
 
 
-def index(request):
-    if not request.user.is_authenticated:
-        return redirect(reverse("login"))
-    return render(request, "users/index.html")
+# def index(request):
+#     # if not request.user.is_authenticated:
+#     #     return redirect(reverse("login"))
+#     return render(request, "users/index.html")
     
 
+def index(request):
+    # if not request.user.is_authenticated:
+    #     return HttpResponseRedirect(reverse("login"))
+    return render(request, "store/index.html")
+    
 def login_view(request):
     if request.method == "POST":
         form = AuthenticationForm(request, data=request.POST)

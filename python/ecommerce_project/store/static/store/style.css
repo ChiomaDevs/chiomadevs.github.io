@@ -1,0 +1,13 @@
+/* styles.css */
+
+/* Set a dark pink background color for the entire site */
+body {
+    background-color: #d63d79; /* Dark pink color */
+    color: #fff; /* Optional: Set text color to white for better contrast */
+}
+
+/* Additional styling if needed */
+header, footer {
+    background-color: #c74b8f; /* Slightly different shade for header and footer */
+    padding: 10px;
+}

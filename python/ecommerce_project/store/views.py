@@ -46,4 +46,7 @@ def orders_view(request):
 
 
 def index(request):
-    return render(request, "store/index.html")
+    products = Product.objects.all()
+    return render(request, "store/index.html", {
+        "products": products
+    })
